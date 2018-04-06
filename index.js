@@ -33,10 +33,10 @@ function prependKitten(name){
 }
 
 function removeLastKitten(name){
-  var rlk = [kittens.pop()];
+  var rlk = [kittens.slice()];
   return rlk;
 }
 function removeFirstKitten(name){
-  var rfk = [kittens.shift()];
+  var rfk = [kittens.slice(1)];
   return rfk;
 }
